@@ -1,0 +1,108 @@
+# AI降重提示词库
+
+## v0 小红书prompt
+
+### 1. 差异化表达避免机械 (Avoids Mechanization)
+中文：重组文本的论证结构与信息呈现顺序，在保持核心观点一致的前提下，通过改变句式组合与段落衔接方式形成差异化表达，避免语言模式的机械重复
+
+英文：Reorganize the argument structure and information presentation sequence of the text. While maintaining consistency in core viewpoints, create differentiated expression by altering sentence combinations and paragraph transitions to avoid mechanical repetition of language patterns
+
+### 2. 简化表达 (Simplify)
+中文：所有内容必须基于可验证的事实依据，不添加未经验证的信息，对不确定内容明确标注；除规范引用的内容外，均需使用个人语言重新组织。采用半正式学术文体确保句结构完整，优先使用简洁句式；将专业术语转换为日常用语，使用基础连接词，采用直接明了的表达方式，避免生僻词汇，保证行文逻辑顺畅。
+
+英文：Use a semi-formal academic style to ensure complete sentence structures, giving priority to concise sentence patterns; convert specialized terms into everyday language, use basic conjunctions, adopt a straightforward and clear expression, avoid rare vocabulary, and ensure smooth logical flow in the writing.
+
+### 3. 加细节 (Add Details)
+中文：对关键论点进行适度扩展，根据需要补充实际案例、具体数据或详细详说明，避免空泛描述，通过具象化描写提升内容的真实感与可信度，使文本更具阅读价值。扩写后的字数和源文本相差幅度在30%以内，比如源文本100字，扩写后的带细节的版本是130字。
+
+英文：Properly expand on key arguments, supplement with actual cases, specific data, or detailed explanations as needed, avoid vague descriptions, enhance the authenticity and credibility of the content through concrete depictions, and make the text more valuable for reading. The difference in word count between the expanded version and the original text should be within 30%. For example, if the original text is 100 words, the expanded version with details should be 130 words.
+
+### 4. xhs降AI率 (Advanced Rewrite)
+中文：避免使用机械化的连接词(如"首先""其次""然后")，改用更具连性的自然过渡；通过使用多样化句式，混合简单句、复合句和括入语使表达更富有层次感，同时避免连续短句或过于整齐的句式。在叙述数据或结论时，补充背景信息或个人研究观察，使内容更加具体并贴近实际研究场景，并通过问题引导或归纳总结的方式实现段落之间的自然过渡，避免生硬切换，从而提升整体阅读的流畅性和逻辑性。最后输出语言为英语。
+
+英文：Avoid using mechanical connectors such as "first, next, then", instead, adopt more cohesive and natural transitions. By using diverse sentence structures, mixing simple sentences, compound sentences, and parenthetical expressions, the expression can be made more layered, while avoiding consecutive short sentences or overly neat sentence patterns. When presenting data or conclusions, supplementing with background information or personal research observations makes the content more specific and closer to the actual research scenario. Additionally, achieving natural transitions between paragraphs through question guidance or summarization avoids abrupt shifts, thereby enhancing the overall readability and logical flow of the text. The final output language is English.
+
+### 5. 防止幻觉 (Prevent Hallucinations)
+中文：请记住，你的回答一切基于事实不能编造。不知道就回答不知道。并且不能照搬别人的话，需要用自己的语言重新描述一遍。(除了引用，引用要遵循MLA格式)写作风格介于正式学术写作和口语描述之间。保证所有的句子都要有主语，不要用复杂长句，尽量使用短句输出。替换掉所有非日常词汇。将所有的句子过度词和连接词换为最基础、最常用的词语。尽量使用简单、直接的表达方式，避免使用复杂或生僻的词汇。确保句子之间的逻辑关系清晰。
+
+英文：Please remember that all your answers must be based on facts and must not be made up. If you don't know, answer that you don't know. Also, you must not copy others' words. You need to rephrase them in your own words. (Except for quotations, which should follow the MLA format.) The writing style should be between formal academic writing and spoken description. Make sure every sentence has a subject. Do not use complex long sentences; try to use short sentences. Replace all non-everyday words. Replace all sentence transition words and conjunctions with the most basic and commonly used ones. Try to use simple and direct expressions, and avoid using complex or uncommon words. Ensure that the logical relationship between sentences is clear.
+
+### 6. 基础改写 (Basic Rewrite)
+中文：保持核心信息不变，将段落中的复合句拆分为2-3个短句，每句控制在20词以内，替换"因此""此外"等高频连接词。将文本中堆叠的被动语调整为主动与被动交替的形式，删减过度使用的逻辑连接词。
+
+英文：Keep the core information unchanged. Split compound sentences in the paragraph into 2-3 short sentences. Each sentence should be within 20 words. Replace high-frequency conjunctions such as "therefore" and "in addition". Adjust the stacked passive voices in the text to an alternating form of active and passive voices. Delete overused logical conjunctions.
+
+## v1 版降AI指令
+
+### AutoFix
+中文：你是一个非母语的留学生，用半学术化的风格改写，去掉"-""first"等任何模版化和机械感的连接和分隔词汇，拒绝小标题和分行，拒绝星号破折号等符号，需要连贯的成几个段落地输出，段落有长有短词汇数有差异。词汇除了术语外保持雅思六级的水平，无复杂高级词汇。句子长度要提高随机性，尽量短句输出。全文意思保持一致但可以插入一些语法错误以模拟真人。
+
+英文：You are an international student whose first language is not English. Rewrite in a semi-academic style. Remove any template-like and mechanical connecting or separating words such as "-" and "first". Refuse subheadings and line breaks, and reject symbols like asterisks and dashes. Output in several coherent paragraphs, with paragraphs varying in length and number of words. Use vocabulary at the IELTS Band 6 level except for technical terms, without complex and advanced words. Increase the randomness of sentence lengths, and try to use short sentences. Keep the overall meaning consistent, but you can insert some grammatical errors to simulate a real person.
+
+### 交叉翻译 (Cross-Trans)
+中文：先把内容翻译为中文，然后再逐字翻译为英文（很傻的高中生翻译），中文和英文翻译结果都给我看
+
+英文：First translate the content into Chinese, then translate it word by word into English (a silly high school student's translation). Show me both the Chinese and English translation results.
+
+### 添加个人色彩 (Personalize)
+中文：你是一个幽默活泼的非母语者，你在用正式语气写论文，但是每10句话你总有一句用个人色彩很重的话来重新表达一下，把下面的文章选中一些句子调整语气。
+
+英文：You are a humorous and lively non-native speaker. You are writing a thesis in a formal tone, but every 10 sentences, you always rephrase one with a very personal touch. Please select some sentences from the following article and adjust their tone.
+
+### 减少个人色彩 (De-Personalize)
+中文：稍微少一些个人色彩：我只要你把特别幼儿化和不正式的个人色彩语句找出来并删改，其他的个人色彩语句不动，特别幼儿化的例子：我的祖母会懂的；我太开心啦；妈妈夸我；真棒；我的天啊
+
+英文：Reduce personal elements a bit: I only want you to identify and revise the sentences with particularly childish and informal personal elements; leave other personal elements unchanged. Examples of particularly childish expressions: "My grandmother would understand"; "I'm so happy"; "Mom praised me"; "Great"; "Oh my god"
+
+## 测试结果总结
+
+### 组合拳1（成功案例）
+**步骤**：
+1. auto fix
+2. 交叉翻译
+3. 加个人色彩
+4. 减少个人色彩
+5. 交叉翻译
+6. 苹果翻译：中-英
+7. 谷歌翻译：中-英-中
+
+**结果**：
+- Gemini2.5flash: ZeroGpt 0%-0%, Gptzero 100%-23.6%, 谷歌翻译/苹果翻译后 10.1%
+- GPT5.2thinking: ZeroGpt 0%-0%, Gptzero 100%-87%, 谷歌翻译/苹果翻译后 100%
+
+**关键发现**：
+- 纯提示词无任何用户输入和外部翻译，大幅降低了AI率但最后结果不正式还有病句，字数保持还可以。降到20%左右。
+- 如果加上外部的谷歌苹果翻译，最后结果就10%了也无病句
+
+## API信息
+
+### ZeroGPT API
+```bash
+curl --location 'https://api.zerogpt.com/api/detect/detectText' \
+--header 'ApiKey: d486bb7f-7dee-4f5e-880f-6b442c4544f5' \
+--header 'Content-Type: application/json' \
+--data '{
+  "input_text": "YOUR_TEXT_HERE"
+}'
+```
+
+### GPTZero API
+```bash
+curl --request POST \
+  --url https://api.gptzero.me/v2/predict/text \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'x-api-key: e455f57763ce4fb69be5350a677fc0c0' \
+  --data '{
+  "document": "YOUR_TEXT_HERE",
+  "multilingual": false
+}'
+```
+
+## LLM API Keys
+
+### GPT
+[OPENAI_API_KEY_REDACTED]
+
+### Gemini
+[GEMINI_API_KEY_REDACTED]
