@@ -1,0 +1,481 @@
+nohup: ignoring input
+/home/ubuntu/ai-detector-system/ai_humanizer/ai_humanizer_agent.py:14: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+================================================================================
+批量验证开始 - 5篇文章 × 3个方案 = 15次测试
+================================================================================
+
+================================================================================
+文章 1/5: ai_7 (895词)
+================================================================================
+
+--- 测试 组合拳1 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 99.99%
+  GPTZero: 99.78% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 4.48%
+  GPTZero: 99.99% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 45.62% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 72.6%
+  GPTZero: 98.56% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 81.54%
+  GPTZero: 98.82% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.36%
+  GPTZero: 71.24% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 0.36%, GPTZero 71.24%
+
+--- 测试 组合拳4 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 6
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 99.99%
+  GPTZero: 99.78% (ai)
+
+[步骤 1] simplify (使用 gpt - gpt-4.1-mini)
+  ZeroGPT: 97.89%
+  GPTZero: 99.86% (ai)
+
+[步骤 2] basic_rewrite (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 2.72%
+  GPTZero: 99.99% (ai)
+
+[步骤 3] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 2.7%
+  GPTZero: 73.45% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 5.5%
+  GPTZero: 97.90% (ai)
+
+[步骤 5] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 99.99% (ai)
+
+[步骤 6] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 2.26%
+  GPTZero: 61.74% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 2.26%, GPTZero 61.74%
+
+--- 测试 智能推荐 ---
+❌ 失败: 'AIHumanizerAgent' object has no attribute 'detect_ai'
+
+================================================================================
+文章 2/5: ai_1 (767词)
+================================================================================
+
+--- 测试 组合拳1 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 99.99% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 20.25%
+  GPTZero: 100.00% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 1.52%
+  GPTZero: 38.40% (human)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 58.38%
+  GPTZero: 99.72% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 80.22%
+  GPTZero: 87.51% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 33.23% (human)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 0.00%, GPTZero 33.23%
+
+--- 测试 组合拳4 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 6
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 99.99% (ai)
+
+[步骤 1] simplify (使用 gpt - gpt-4.1-mini)
+  ZeroGPT: 100.0%
+  GPTZero: 99.99% (ai)
+
+[步骤 2] basic_rewrite (使用 gemini - gemini-2.5-flash)
+ZeroGPT检测失败: HTTPSConnectionPool(host='api.zerogpt.com', port=443): Read timed out. (read timeout=30)
+  ZeroGPT: None%
+  GPTZero: 99.98% (ai)
+
+[步骤 3] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 50.04% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 18.37%
+  GPTZero: 70.12% (ai)
+
+[步骤 5] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 99.97% (ai)
+
+[步骤 6] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 97.25% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 0.00%, GPTZero 97.25%
+
+--- 测试 智能推荐 ---
+❌ 失败: 'AIHumanizerAgent' object has no attribute 'detect_ai'
+
+================================================================================
+文章 3/5: ai_13 (383词)
+================================================================================
+
+--- 测试 组合拳1 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 100.00% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 14.24%
+  GPTZero: 100.00% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 9.04%
+  GPTZero: 81.54% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 50.34%
+  GPTZero: 76.88% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 87.06%
+  GPTZero: 77.76% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 83.96% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 0.00%, GPTZero 83.96%
+
+--- 测试 组合拳4 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 6
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 100.00% (ai)
+
+[步骤 1] simplify (使用 gpt - gpt-4.1-mini)
+  ZeroGPT: 100.0%
+  GPTZero: 99.99% (ai)
+
+[步骤 2] basic_rewrite (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 19.46%
+  GPTZero: 99.99% (ai)
+
+[步骤 3] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 17.69%
+  GPTZero: 83.78% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 15.09%
+  GPTZero: 99.17% (ai)
+
+[步骤 5] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 7.44%
+  GPTZero: 100.00% (ai)
+
+[步骤 6] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 3.39%
+  GPTZero: 37.15% (human)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 3.39%, GPTZero 37.15%
+
+--- 测试 智能推荐 ---
+❌ 失败: 'AIHumanizerAgent' object has no attribute 'detect_ai'
+
+================================================================================
+文章 4/5: ai_18 (1100词)
+================================================================================
+
+--- 测试 组合拳1 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 98.13% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 3.54%
+  GPTZero: 99.95% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 53.64% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 10.77%
+  GPTZero: 98.21% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 18.62%
+  GPTZero: 92.46% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 1.88%
+  GPTZero: 43.89% (human)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 1.88%, GPTZero 43.89%
+
+--- 测试 组合拳4 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 6
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 98.15% (ai)
+
+[步骤 1] simplify (使用 gpt - gpt-4.1-mini)
+  ZeroGPT: 98.56%
+  GPTZero: 99.73% (ai)
+
+[步骤 2] basic_rewrite (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 23.14%
+  GPTZero: 99.96% (ai)
+
+[步骤 3] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 41.97% (human)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 33.38% (human)
+
+[步骤 5] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 9.23%
+  GPTZero: 99.42% (ai)
+
+[步骤 6] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 8.21%
+  GPTZero: 71.32% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 8.21%, GPTZero 71.32%
+
+--- 测试 智能推荐 ---
+❌ 失败: 'AIHumanizerAgent' object has no attribute 'detect_ai'
+
+================================================================================
+文章 5/5: ai_14 (564词)
+================================================================================
+
+--- 测试 组合拳1 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 69.17%
+  GPTZero: 99.93% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 6.42%
+  GPTZero: 97.28% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 6.22%
+  GPTZero: 70.82% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 33.29%
+  GPTZero: 55.13% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 67.43%
+  GPTZero: 37.03% (mixed)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.6%
+  GPTZero: 77.68% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 0.60%, GPTZero 77.68%
+
+--- 测试 组合拳4 ---
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 6
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 69.17%
+  GPTZero: 99.93% (ai)
+
+[步骤 1] simplify (使用 gpt - gpt-4.1-mini)
+  ZeroGPT: 85.7%
+  GPTZero: 96.54% (ai)
+
+[步骤 2] basic_rewrite (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 99.34% (ai)
+
+[步骤 3] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 2.72%
+  GPTZero: 66.85% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 33.16%
+  GPTZero: 99.68% (ai)
+
+[步骤 5] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.0%
+  GPTZero: 99.98% (ai)
+
+[步骤 6] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 5.33%
+  GPTZero: 33.98% (mixed)
+
+================================================================================
+流水线完成！
+================================================================================
+
+✅ 完成: ZeroGPT 5.33%, GPTZero 33.98%
+
+--- 测试 智能推荐 ---
+❌ 失败: 'AIHumanizerAgent' object has no attribute 'detect_ai'
+
+================================================================================
+保存结果...
+================================================================================
+
+✅ 结果已保存:
+  - batch_validation_results.json (详细结果)
+  - batch_validation_summary.csv (汇总表格)
+
+汇总表格:
+ 文章ID   方案  步骤数 ZeroGPT GPTZero 成功
+ ai_7 组合拳1    5   0.36%  71.24%  ✅
+ ai_7 组合拳4    6   2.26%  61.74%  ✅
+ ai_7 智能推荐    0      失败      失败  ❌
+ ai_1 组合拳1    5   0.00%  33.23%  ✅
+ ai_1 组合拳4    6   0.00%  97.25%  ✅
+ ai_1 智能推荐    0      失败      失败  ❌
+ai_13 组合拳1    5   0.00%  83.96%  ✅
+ai_13 组合拳4    6   3.39%  37.15%  ✅
+ai_13 智能推荐    0      失败      失败  ❌
+ai_18 组合拳1    5   1.88%  43.89%  ✅
+ai_18 组合拳4    6   8.21%  71.32%  ✅
+ai_18 智能推荐    0      失败      失败  ❌
+ai_14 组合拳1    5   0.60%  77.68%  ✅
+ai_14 组合拳4    6   5.33%  33.98%  ✅
+ai_14 智能推荐    0      失败      失败  ❌
+
+================================================================================
+统计
+================================================================================
+总测试数: 15
+成功: 10/15 (66.7%)
+
+组合拳1:
+  平均ZeroGPT: 0.57%
+  平均GPTZero: 62.00%
+  成功率: 5/5
+
+组合拳4:
+  平均ZeroGPT: 3.84%
+  平均GPTZero: 60.29%
+  成功率: 5/5
