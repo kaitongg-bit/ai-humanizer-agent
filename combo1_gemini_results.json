@@ -1,0 +1,228 @@
+[
+  {
+    "article_id": "ai_2",
+    "word_count": 804,
+    "success": false,
+    "error": "unsupported format string passed to NoneType.__format__"
+  },
+  {
+    "article_id": "ai_16",
+    "word_count": 668,
+    "original_zerogpt": 100,
+    "original_gptzero": 99.25629729247272,
+    "final_zerogpt": 1.24,
+    "final_gptzero": 79.78319128509361,
+    "final_gptzero_class": "ai",
+    "gptzero_reduction": 19.473106007379116,
+    "steps": [
+      {
+        "step": 0,
+        "prompt_name": null,
+        "zerogpt": 100,
+        "gptzero": 99.25629729247272,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 1,
+        "prompt_name": "autofix",
+        "zerogpt": 5.6,
+        "gptzero": 99.99126011951506,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 2,
+        "prompt_name": "cross_trans",
+        "zerogpt": 2.49,
+        "gptzero": 62.24713776271279,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 3,
+        "prompt_name": "personalize",
+        "zerogpt": 29.69,
+        "gptzero": 87.99325576123799,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 4,
+        "prompt_name": "depersonalize",
+        "zerogpt": 63.71,
+        "gptzero": 36.27124549836797,
+        "gptzero_class": "mixed"
+      },
+      {
+        "step": 5,
+        "prompt_name": "cross_trans",
+        "zerogpt": 1.24,
+        "gptzero": 79.78319128509361,
+        "gptzero_class": "ai"
+      }
+    ],
+    "success": true
+  },
+  {
+    "article_id": "ai_15",
+    "word_count": 588,
+    "original_zerogpt": 96.77,
+    "original_gptzero": 99.71004876227727,
+    "final_zerogpt": 0.92,
+    "final_gptzero": 53.73414422088128,
+    "final_gptzero_class": "ai",
+    "gptzero_reduction": 45.97590454139599,
+    "steps": [
+      {
+        "step": 0,
+        "prompt_name": null,
+        "zerogpt": 96.77,
+        "gptzero": 99.71004876227727,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 1,
+        "prompt_name": "autofix",
+        "zerogpt": 66.69,
+        "gptzero": 99.96674884776645,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 2,
+        "prompt_name": "cross_trans",
+        "zerogpt": null,
+        "gptzero": 49.901166262830365,
+        "gptzero_class": "human"
+      },
+      {
+        "step": 3,
+        "prompt_name": "personalize",
+        "zerogpt": 42.52,
+        "gptzero": 99.98466401896425,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 4,
+        "prompt_name": "depersonalize",
+        "zerogpt": 43.06,
+        "gptzero": 99.96810821719552,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 5,
+        "prompt_name": "cross_trans",
+        "zerogpt": 0.92,
+        "gptzero": 53.73414422088128,
+        "gptzero_class": "ai"
+      }
+    ],
+    "success": true
+  },
+  {
+    "article_id": "ai_8",
+    "word_count": 862,
+    "original_zerogpt": 100.0,
+    "original_gptzero": 99.46682185509401,
+    "final_zerogpt": 16.09,
+    "final_gptzero": 69.89249088697973,
+    "final_gptzero_class": "ai",
+    "gptzero_reduction": 29.574330968114282,
+    "steps": [
+      {
+        "step": 0,
+        "prompt_name": null,
+        "zerogpt": 100.0,
+        "gptzero": 99.46682185509401,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 1,
+        "prompt_name": "autofix",
+        "zerogpt": 6.12,
+        "gptzero": 99.98219042309682,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 2,
+        "prompt_name": "cross_trans",
+        "zerogpt": 5.25,
+        "gptzero": 80.76916609845858,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 3,
+        "prompt_name": "personalize",
+        "zerogpt": null,
+        "gptzero": 77.3320181585493,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 4,
+        "prompt_name": "depersonalize",
+        "zerogpt": 97.37,
+        "gptzero": 32.997449437725834,
+        "gptzero_class": "mixed"
+      },
+      {
+        "step": 5,
+        "prompt_name": "cross_trans",
+        "zerogpt": 16.09,
+        "gptzero": 69.89249088697973,
+        "gptzero_class": "ai"
+      }
+    ],
+    "success": true
+  },
+  {
+    "article_id": "ai_5",
+    "word_count": 613,
+    "original_zerogpt": 100.0,
+    "original_gptzero": 87.83423527559611,
+    "final_zerogpt": 0.36,
+    "final_gptzero": 80.35930676270799,
+    "final_gptzero_class": "ai",
+    "gptzero_reduction": 7.474928512888127,
+    "steps": [
+      {
+        "step": 0,
+        "prompt_name": null,
+        "zerogpt": 100.0,
+        "gptzero": 87.83423527559611,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 1,
+        "prompt_name": "autofix",
+        "zerogpt": 9.59,
+        "gptzero": 99.97794771270085,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 2,
+        "prompt_name": "cross_trans",
+        "zerogpt": 8.39,
+        "gptzero": 73.20944234220596,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 3,
+        "prompt_name": "personalize",
+        "zerogpt": 51.84,
+        "gptzero": 96.32818695421905,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 4,
+        "prompt_name": "depersonalize",
+        "zerogpt": 81.11,
+        "gptzero": 89.42171885305257,
+        "gptzero_class": "ai"
+      },
+      {
+        "step": 5,
+        "prompt_name": "cross_trans",
+        "zerogpt": 0.36,
+        "gptzero": 80.35930676270799,
+        "gptzero_class": "ai"
+      }
+    ],
+    "success": true
+  }
+]

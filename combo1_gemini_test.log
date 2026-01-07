@@ -1,0 +1,241 @@
+/home/ubuntu/ai-detector-system/ai_humanizer/ai_humanizer_agent.py:14: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+================================================================================
+测试原始组合拳1（全Gemini 2.5 Flash）
+文章数: 5
+================================================================================
+
+================================================================================
+文章 1/5: ai_2 (804词)
+================================================================================
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 99.90% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 26.41%
+  GPTZero: 99.99% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 1.71%
+  GPTZero: 81.78% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+GPTZero检测失败: HTTPSConnectionPool(host='api.gptzero.me', port=443): Max retries exceeded with url: /v2/predict/text (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))
+  ZeroGPT: 56.43%
+❌ 失败: unsupported format string passed to NoneType.__format__
+
+================================================================================
+文章 2/5: ai_16 (668词)
+================================================================================
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100%
+  GPTZero: 99.26% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 5.6%
+  GPTZero: 99.99% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 2.49%
+  GPTZero: 62.25% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 29.69%
+  GPTZero: 87.99% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 63.71%
+  GPTZero: 36.27% (mixed)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 1.24%
+  GPTZero: 79.78% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+
+✅ 完成:
+  ZeroGPT: 1.24%
+  GPTZero: 79.78% (ai)
+  GPTZero降低: 19.47%
+
+================================================================================
+文章 3/5: ai_15 (588词)
+================================================================================
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 96.77%
+  GPTZero: 99.71% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 66.69%
+  GPTZero: 99.97% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: None%
+  GPTZero: 49.90% (human)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 42.52%
+  GPTZero: 99.98% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 43.06%
+  GPTZero: 99.97% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.92%
+  GPTZero: 53.73% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+
+✅ 完成:
+  ZeroGPT: 0.92%
+  GPTZero: 53.73% (ai)
+  GPTZero降低: 45.98%
+
+================================================================================
+文章 4/5: ai_8 (862词)
+================================================================================
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 99.47% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 6.12%
+  GPTZero: 99.98% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 5.25%
+  GPTZero: 80.77% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+ZeroGPT检测失败: HTTPSConnectionPool(host='api.zerogpt.com', port=443): Max retries exceeded with url: /api/detect/detectText (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))
+  ZeroGPT: None%
+  GPTZero: 77.33% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 97.37%
+  GPTZero: 33.00% (mixed)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 16.09%
+  GPTZero: 69.89% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+
+✅ 完成:
+  ZeroGPT: 16.09%
+  GPTZero: 69.89% (ai)
+  GPTZero降低: 29.57%
+
+================================================================================
+文章 5/5: ai_5 (613词)
+================================================================================
+
+================================================================================
+开始处理文章: test
+流水线步骤数: 5
+================================================================================
+
+[步骤 0] 检测原文
+  ZeroGPT: 100.0%
+  GPTZero: 87.83% (ai)
+
+[步骤 1] autofix (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 9.59%
+  GPTZero: 99.98% (ai)
+
+[步骤 2] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 8.39%
+  GPTZero: 73.21% (ai)
+
+[步骤 3] personalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 51.84%
+  GPTZero: 96.33% (ai)
+
+[步骤 4] depersonalize (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 81.11%
+  GPTZero: 89.42% (ai)
+
+[步骤 5] cross_trans (使用 gemini - gemini-2.5-flash)
+  ZeroGPT: 0.36%
+  GPTZero: 80.36% (ai)
+
+================================================================================
+流水线完成！
+================================================================================
+
+
+✅ 完成:
+  ZeroGPT: 0.36%
+  GPTZero: 80.36% (ai)
+  GPTZero降低: 7.47%
+
+================================================================================
+保存结果...
+================================================================================
+
+汇总表格:
+ 文章ID  词数 原始ZeroGPT 原始GPTZero 最终ZeroGPT 最终GPTZero GPTZero分类 GPTZero降低
+ai_16 668   100.00%    99.26%     1.24%    79.78%        ai    19.47%
+ai_15 588    96.77%    99.71%     0.92%    53.73%        ai    45.98%
+ ai_8 862   100.00%    99.47%    16.09%    69.89%        ai    29.57%
+ ai_5 613   100.00%    87.83%     0.36%    80.36%        ai     7.47%
+
+================================================================================
+统计
+================================================================================
+成功率: 4/5
+
+平均最终ZeroGPT: 4.65%
+平均最终GPTZero: 70.94%
+平均GPTZero降低: 25.62%
+
+GPTZero <30%: 0/4 (0.0%)
+GPTZero <50%: 0/4 (0.0%)
+GPTZero分类为Human: 0/4 (0.0%)
+
+✅ 测试完成！
+结果已保存:
+  - combo1_gemini_results.json
+  - combo1_gemini_summary.csv
